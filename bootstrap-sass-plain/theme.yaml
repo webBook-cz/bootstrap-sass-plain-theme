@@ -1,9 +1,8 @@
-name: Bootstrap-Sass-Book
+name: Bootstrap-Sass-Plain
 description: 'Bootstrap 4.6 sass customizable'
 author: webBook
 homepage: webbook.page
-code: bootstrap-sass-book
+code: bootstrap-sass-plain
 form: fields.yaml
 require:
 - Martin.Forms
-- WebBook.Checkcontent
