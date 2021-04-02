@@ -1,0 +1,28 @@
+==
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light top-navbar" id="ftco-navbar">
+        <div class="container">
+          {% if this.theme.site_logo %}
+              <a class="navbar-brand" href="/">
+                  <img src="{{ this.theme.site_logo.path }}" alt="{{ this.theme.site_title }}">
+              </a>
+          {% else %}
+              <a class="navbar-brand" href="/">{{ this.theme.site_title }}</a>
+          {% endif %}
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#body" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#intro" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#xplain" class="nav-link">How It Works</a></li>
+              <li class="nav-item"><a href="#pricing" class="nav-link">Pricing Plans</a></li>
+              <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>

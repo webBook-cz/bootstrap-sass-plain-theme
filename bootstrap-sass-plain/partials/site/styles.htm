@@ -1,0 +1,14 @@
+{% if this.theme.font_awesome %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+{% endif %}
+{% if this.theme.fonts %}
+    <link href="{{ this.theme.fonts }}" rel="stylesheet">
+{% endif %}
+<link href="{{ [
+        'assets/css/animate.css',
+        'assets/css/owl.carousel.min.css',
+        'assets/css/owl.theme.default.min.css',
+        'assets/css/magnific-popup.css',
+        'assets/scss/webbook.scss'
+    ] | theme }}" rel="stylesheet">
+{% styles %}

@@ -1,0 +1,38 @@
+==
+<!doctype html>
+<html lang="{{ this.theme.site_locale ? 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }} | {{ this.theme.site_title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow" />
+{% if this.theme.copyright %}
+    <meta name="rights" content="{{ this.theme.copyright }}" />
+{% endif %}
+{% if this.theme.meta_description %}
+    <meta name="description" content="{{ this.theme.meta_description }}" />
+{% endif %}
+    {% partial 'site/styles' %}
+{% if this.theme.google_analytics %}
+    {% partial 'site/ga'  trackingID = this.theme.google_analytics %}
+{% endif %}
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="68" id="body">
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+  </div>
+    {#% partial 'site/header' %#}
+    {% partial 'site/nav' %}
+
+    <main class="web-main">
+        {% page %}
+    </main>
+    
+    {% partial 'site/footer' %}
+    {% partial 'site/scripts' %}
+</body>
+</html>
