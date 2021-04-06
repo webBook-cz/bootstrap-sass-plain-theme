@@ -128,31 +128,6 @@ tabs:
             label: Enabled
             type: switch
             default: true
-        intro_headline:
-            tab: Intro / Footer
-            label: Headline
-            type: text
-            span: auto
-            default: "Bootstrap 4.6 SASS Theme"
-        intro_subhead:
-            tab: Intro / Footer
-            label: Subhead
-            type: text
-            span: auto
-            default: "Bootsrtrap with easy custom config!"
-        intro_button:
-            tab: Intro / Footer
-            label: Button
-            type: text
-            default: Go to Theme Homepage
-            span: left
-        intro_button_link:
-            tab: Intro / Footer
-            label: Button link
-            type: text
-            default: "/content/default"
-            span: right
-            comment: Leave empty for hiding button
         meta_description:
             tab: Intro / Footer
             label: Meta description
@@ -160,7 +135,47 @@ tabs:
             size: small
             default: ""
             span: full
+        meta_keywords:
+            tab: Intro / Footer
+            label: Meta keywords
+            type: text
+            span: full
+            default: ""
         info_section_03:
+            tab: Intro / Footer
+            type: section
+            cssClass: "p-t-0"
+            label: Overlays
+        overlay_color_top:
+            label: Top overlay
+            tab: Intro / Footer
+            type: colorpicker
+            default: '#2f3c48'
+            assetVar: 'overlay_color_top'
+            span: left
+        overlay_color_bottom:
+            label: Bottom overlay
+            tab: Intro / Footer
+            type: colorpicker
+            default: '#2f3c48'
+            assetVar: 'overlay_color_bottom'
+            span: right
+        overlay_t_top:
+            tab: Intro / Footer
+            label: Transparency
+            type: text
+            span: left
+            assetVar: 'overlay_t_top'
+            default: '0.5'
+        overlay_t_bottom:
+            tab: Intro / Footer
+            label: Transparency
+            type: text
+            span: left
+            assetVar: 'overlay_t_bottom'
+            default: '0.5'
+
+        info_section_04:
             tab: Intro / Footer
             type: section
             cssClass: "p-t-0"

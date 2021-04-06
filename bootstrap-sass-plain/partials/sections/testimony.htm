@@ -1,10 +1,20 @@
-    <section class="ftco-section testimony-section" id="testimony">
+==
+<?php
+function onStart()
+{
+   $this->viewBag->setProperty('myVar', 'My Valuexdtt');
+}
+?>
+==
+<section class="ftco-section testimony-section" id="testimony">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
           	<span class="subheading">Testimonial</span>
             <h2 class="mb-3">Happy Clients</h2>
+            §§ {{ viewBag.myVar }} §§
+            {% set a = 'aa' %}
           </div>
         </div>
         <div class="row ftco-animate">

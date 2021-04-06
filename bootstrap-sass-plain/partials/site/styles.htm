@@ -4,11 +4,13 @@
 {% if this.theme.fonts %}
     <link href="{{ this.theme.fonts }}" rel="stylesheet">
 {% endif %}
-<link href="{{ [
-        'assets/css/animate.css',
-        'assets/css/owl.carousel.min.css',
-        'assets/css/owl.theme.default.min.css',
-        'assets/css/magnific-popup.css',
-        'assets/scss/webbook.scss'
-    ] | theme }}" rel="stylesheet">
+
+{% set styleslist = ['assets/css/animate.css'] %}
+{% set styleslist = styleslist|merge(['assets/css/owl.carousel.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/css/owl.carousel.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/css/owl.theme.default.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/css/magnific-popup.css']) %}
+{% set styleslist = styleslist|merge(['assets/scss/webbook.scss']) %}
+
+<link href="{{ styleslist|theme }}" rel="stylesheet">
 {% styles %}
